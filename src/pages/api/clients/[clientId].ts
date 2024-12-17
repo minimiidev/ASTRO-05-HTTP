@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import { Clients, db, eq } from "astro:db";
 
-export const prerender = false;
+// export const prerender = false;
 
 export const GET: APIRoute = async ({ params, request }) => {
   const clientId = params.clientId ?? "";
